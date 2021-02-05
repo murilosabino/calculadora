@@ -9,25 +9,27 @@ public class Operacoes {
 
     public void soma() {
         boolean continua = true;
-        while (continua) {
-            ArrayList<Double> numeros = new ArrayList<>();
+        
+        ArrayList<Double> numeros = new ArrayList<>();
             System.out.println("Digite o número ou 0 para sair: \n");
             Scanner soma1 = new Scanner(System.in);
-            double n = soma1.nextDouble();
-            if(n == 0){
-                continua = false;
+            double n = soma1.nextDouble();    
+
+            while(continua){
+                if(n != 0){
+                    numeros.add(n);}
+                
+            }
+            if(n==0){
                 System.out.println(numeros);
-                System.out.println("Fim do programa");
-            }
-            else{
-            numeros.add(n);
+                continua = false;
             
             
             }
 
 
 
-        }}}
+        }}
 /*
         public void subtrai () {
 
